@@ -26,6 +26,12 @@
 
 """
 
+"""
+시간 복잡도: O(n²)
+
+누적합을 계산한뒤 길이가 L 이상인 모든 부분 수열의 평균 비용을 구하고 그 중 최소값을 출력한다.
+"""
+
 import sys
 input = sys.stdin.readline
 
@@ -40,3 +46,5 @@ for C in range(int(input())):
         for j in range(i-L+1):            
             result = min(result, (prefix_sum[i] - prefix_sum[j]) / (i-j))    
     print("%.8f" % result)
+
+
