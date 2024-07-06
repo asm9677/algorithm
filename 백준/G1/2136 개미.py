@@ -60,12 +60,3 @@ for idx in range(a,b):
     if pos[idx][0] * k > 0:
         i-=k
 print(pos[i][1],t)
-
-'''
-5 6
--1 
--2 
-3 
-4 
-5
-'''
